@@ -9,8 +9,7 @@ async function listFree() {
   return knex("tables")
       .select("*")
       .where({ reservation_id: null })
-      .orderBy("table_name")
-  );
+      .orderBy("table_name");
 }
 
 // knex creates table
